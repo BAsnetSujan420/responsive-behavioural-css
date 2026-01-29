@@ -1,5 +1,5 @@
 import './App.css';
-import ColorTheme, { GlobalStyles } from './components/ColorTheme';
+import DarkMode, { GlobalStyles } from './components/DarkMode';
 import Sidebar from './components/Sidebar';
 import StackedCards from './components/StackedCards';
 
@@ -9,7 +9,8 @@ function App() {
       {/* <Sidebar /> */}
       {/* <StackedCards /> */}
       <GlobalStyles />
-      <ColorTheme />
+      {/* <ColorTheme /> */}
+      <DarkMode />
     </>
   );
 }
