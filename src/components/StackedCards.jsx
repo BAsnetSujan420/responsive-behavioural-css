@@ -2,21 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Main = styled.main`
+  --spacing: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  gap: 8px;
-  padding: 8px;
+  gap: var(--spacing);
+  padding: var(--spacing);
 
   @media (min-width: 350px) {
-    gap: 16px;
-    padding: 16px;
+    --spacing: 16px;
   }
 
   @media (min-width: 500px) {
-    gap: 32px;
-    padding: 32px;
+    --spacing: 32px;
   }
 `;
 
@@ -33,17 +32,15 @@ const Card = styled.article`
 
   box-shadow: 0px 2px 16px hsla(0deg 0% 0% / 0.2);
 
-  border-radius: 8px;
-  padding: 8px;
+  border-radius: var(--spacing);
+  padding: var(--spacing);
 
   @media (min-width: 350px) {
-    border-radius: 16px;
-    padding: 16px;
+    --spacing: 16px;
   }
 
   @media (min-width: 500px) {
-    border-radius: 32px;
-    padding: 32px;
+    --spacing: 32px;
   }
 `;
 
