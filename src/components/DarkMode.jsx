@@ -4,15 +4,20 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 // Global styles
 export const GlobalStyles = createGlobalStyle`
+  html {
+  --color-background: hsl(250deg 10% 90%);
+  --color-text: hsl(250deg 20% 20%);
+  --color-primary: hsl(250deg 100% 50%);
+  }
   body {
-    background: hsl(250deg 10% 90%);
-    color: hsl(250deg 20% 20%);
+    background: var(--color-background);
+    color: var(--color-text);
     margin: 0;
     font-family: sans-serif;
   }
 
   a {
-    color: hsl(250deg 100% 50%);
+    color: var(--color-primary);
     text-decoration: none;
   }
 
@@ -26,8 +31,12 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 8px;
   }
 
-  @media (prefer-color-scheme: dark){
-  
+  @media (prefers-color-scheme: dark){
+  html{
+    --color-background: hsl(250deg 10% 10%);
+    --color-text: hsl(250deg 20% 80%);
+    --color-primary: hsl(250deg 100% 70%);
+   }
   }
 `;
 
