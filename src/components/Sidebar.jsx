@@ -5,23 +5,35 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: baseline;
   gap: 32px;
-  padding: 32px 0;
+  padding: 32px;
   color: black;
+
+  @media (min-width: 700px) {
+    padding: 32px 0;
+  }
 `;
 
 export const SideBar = styled.nav`
+  display: none;
   flex: 1;
   max-width: 350px;
   background: white;
   padding: 24px 32px;
   border-radius: 0 16px 16px 0;
+
+  @media (min-width: 700px) {
+    display: revert;
+  }
 `;
 
 export const Main = styled.main`
   flex: 3;
   background: white;
   padding: 24px 32px 32px;
-  border-radius: 16px 0 0 16px;
+  border-radius: 16px;
+  @media (min-width: 700px) {
+    border-radius: 16px 0 0 16px;
+  }
 `;
 
 const Section = styled.section`
