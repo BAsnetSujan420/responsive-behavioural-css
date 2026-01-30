@@ -1,5 +1,6 @@
 import './App.css';
 import ArtProject from './components/ArtProject';
+import BeachDay from './components/BeachDay';
 import DarkMode, { GlobalStyles } from './components/DarkMode';
 import Sidebar from './components/Sidebar';
 import StackedCards from './components/StackedCards';
@@ -12,7 +13,8 @@ function App() {
       {/* <GlobalStyles /> */}
       {/* <ColorTheme /> */}
       {/* <DarkMode /> */}
-      <ArtProject />
+      {/* <ArtProject />  */}
+      <BeachDay />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Row = styled.div`
   --box-size: 75px;
@@ -10,6 +10,14 @@ export const Row = styled.div`
   height: calc(var(--box-size) * 4);
 `;
 
+const slowTate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
 export const Box = styled.div`
   width: var(--box-size);
   height: var(--box-size);
@@ -20,7 +28,11 @@ export const Box = styled.div`
     hsl(calc(340deg + var(--index) * -10deg) 100% 50%)
   );
 
-  border-radius: calc(var(--index) * 3%);
+  &:nth-of-type(3n) {
+    border-radius: 25%;
+  }
+
+  animation: ${slowTate} calc(500ms + var(--index) * 200ms) 2 linear;
 `;
 
 function ArtProject() {
