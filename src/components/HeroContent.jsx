@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const Hero = styled.header`
-  height: 80vh;
+  min-height: min(80vh, 500px);
   background: url('https://courses.joshwcomeau.com/cfj-mats/night-sky.jpg')
     bottom center / cover no-repeat;
 
