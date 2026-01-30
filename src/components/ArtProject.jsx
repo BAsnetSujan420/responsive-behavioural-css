@@ -14,7 +14,13 @@ export const Box = styled.div`
   width: var(--box-size);
   height: var(--box-size);
 
-  background: hsl(calc(var(--index) * -7deg) 100% 50%);
+  background: linear-gradient(
+    calc(135deg + var(--index) * 33deg),
+    hsl(calc(275deg + var(--index) * -1deg) 100% 50%),
+    hsl(calc(340deg + var(--index) * -10deg) 100% 50%)
+  );
+
+  border-radius: calc(var(--index) * 3%);
 `;
 
 function ArtProject() {
