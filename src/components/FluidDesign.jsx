@@ -3,18 +3,20 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
   padding: 8px;
   background: white;
   border-radius: 8px;
   margin: 16px 0;
   color: black;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const Description = styled.div`
   flex: 1;
   padding: 5px 16px 8px 8px;
-  min-width: 250px;
 `;
 
 export const Bibliography = styled.nav`
@@ -23,7 +25,10 @@ export const Bibliography = styled.nav`
   padding: 8px;
   padding-left: 32px;
   border-radius: 0 4px 4px 0;
-  min-width: 300px;
+
+  @media (max-width: 600px) {
+    border-radius: 0 0 4px 4px;
+  }
 
   ul {
     margin: 0;
