@@ -5,6 +5,7 @@ import DarkMode, { GlobalStyles } from './components/DarkMode';
 import FluidDesign from './components/FluidDesign';
 import HeroContent from './components/HeroContent';
 import MaxWidthColumn from './components/MaxWidthColumn';
+import OurShop from './components/OurShop';
 import Sidebar from './components/Sidebar';
 import StackedCards from './components/StackedCards';
 
@@ -20,7 +21,8 @@ function App() {
       {/* <BeachDay /> */}
       {/* <HeroContent /> */}
       {/* <MaxWidthColumn /> */}
-      <FluidDesign />
+      {/* <FluidDesign /> */}
+      <OurShop />
     </>
   );
 }
