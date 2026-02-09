@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100%;
+  gap: 4px;
 `;
 
 export const Box = styled.div`
@@ -13,23 +14,33 @@ export const Box = styled.div`
 
   &.one {
     background-color: pink;
+    width: calc(var(--rect-width) * 0.25);
   }
   &.two {
     background-color: pink;
+    width: calc(var(--rect-width) * 0.75);
   }
 
   &.three {
     background-color: lavender;
+    width: calc(var(--rect-width) * 0.5);
   }
   &.four {
     background-color: lavender;
+    width: calc(var(--rect-width) * 0.5);
   }
 
   &.five {
     background-color: honeydew;
+    width: calc(var(--rect-width) * 0.75);
   }
   &.six {
     background-color: honeydew;
+    width: calc(var(--rect-width) * 0.25);
+  }
+
+  &:nth-of-type(odd) {
+    justify-self: end;
   }
 `;
 
