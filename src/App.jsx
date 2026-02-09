@@ -5,6 +5,7 @@ import DarkMode, { GlobalStyles } from './components/DarkMode';
 import FluidDesign from './components/FluidDesign';
 import FluidGrid from './components/FluidGrid';
 import GridAlignment from './components/GridAlignment';
+import GridSnippet from './components/GridSnippet';
 import HeroContent from './components/HeroContent';
 import MaxWidthColumn from './components/MaxWidthColumn';
 import OurShop from './components/OurShop';
@@ -26,7 +27,8 @@ function App() {
       {/* <FluidDesign /> */}
       {/* <OurShop /> */}
       {/* <GridAlignment /> */}
-      <FluidGrid />
+      {/* <FluidGrid /> */}
+      <GridSnippet />
     </>
   );
 }
