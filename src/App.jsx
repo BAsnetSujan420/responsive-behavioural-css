@@ -3,6 +3,7 @@ import ArtProject from './components/ArtProject';
 import BeachDay from './components/BeachDay';
 import DarkMode, { GlobalStyles } from './components/DarkMode';
 import FluidDesign from './components/FluidDesign';
+import GridAlignment from './components/GridAlignment';
 import HeroContent from './components/HeroContent';
 import MaxWidthColumn from './components/MaxWidthColumn';
 import OurShop from './components/OurShop';
@@ -22,7 +23,8 @@ function App() {
       {/* <HeroContent /> */}
       {/* <MaxWidthColumn /> */}
       {/* <FluidDesign /> */}
-      <OurShop />
+      {/* <OurShop /> */}
+      <GridAlignment />
     </>
   );
 }
