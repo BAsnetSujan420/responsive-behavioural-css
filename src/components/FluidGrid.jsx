@@ -5,7 +5,11 @@ const Grid = styled.main`
   display: grid;
   padding: 16px;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+  grid-template-columns: 1fr;
+
+  @media (min-width: 450px) {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 `;
 
 const Item = styled.div`
