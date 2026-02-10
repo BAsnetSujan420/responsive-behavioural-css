@@ -12,6 +12,7 @@ import OurShop from './components/OurShop';
 import OurTeam from './components/OurTeam';
 import Sidebar from './components/Sidebar';
 import StackedCards from './components/StackedCards';
+import StickyGrid from './components/StickyGrid';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       {/* <GridAlignment /> */}
       {/* <FluidGrid /> */}
       {/* <GridSnippet /> */}
-      <OurTeam />
+      {/* <OurTeam /> */}
+      <StickyGrid />
     </>
   );
 }
