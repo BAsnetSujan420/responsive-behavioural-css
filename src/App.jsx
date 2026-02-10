@@ -9,6 +9,7 @@ import GridSnippet from './components/GridSnippet';
 import HeroContent from './components/HeroContent';
 import MaxWidthColumn from './components/MaxWidthColumn';
 import OurShop from './components/OurShop';
+import OurTeam from './components/OurTeam';
 import Sidebar from './components/Sidebar';
 import StackedCards from './components/StackedCards';
 
@@ -28,7 +29,8 @@ function App() {
       {/* <OurShop /> */}
       {/* <GridAlignment /> */}
       {/* <FluidGrid /> */}
-      <GridSnippet />
+      {/* <GridSnippet /> */}
+      <OurTeam />
     </>
   );
 }
