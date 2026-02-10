@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Grid = styled.div`
+  --header-height: 5rem;
   display: grid;
   grid-template-areas:
     'header header'
@@ -15,19 +16,30 @@ const Grid = styled.div`
   & > * {
     padding: 8px;
   }
+  isolation: isolate;
 `;
 
 const Header = styled.header`
   grid-area: header;
-  height: 5rem;
+  height: var(--header-height);
   border-bottom: 3px solid;
-
+  position: sticky;
+  top: 0;
+  background-color: black;
   display: grid;
   place-content: center;
+  z-index: 2;
 `;
 
 const Sidebar = styled.aside`
   grid-area: sidebar;
+  z-index: 1;
+`;
+
+const StickySidebar = styled.div`
+  position: sticky;
+  top: var(--header-height);
+  padding-top: 1rem;
 `;
 
 const Main = styled.main`
@@ -37,12 +49,14 @@ const Main = styled.main`
 `;
 
 const Footer = styled.footer`
+  position: relative;
   grid-area: footer;
   height: 5rem;
   border-top: 3px solid;
-
+  background-color: black;
   display: grid;
   place-content: center;
+  z-index: 2;
 `;
 
 const Page = styled.div`
@@ -59,15 +73,41 @@ export default function StickyGrid() {
         </Header>
 
         <Sidebar>
-          <h2>Chicken Cacciatore</h2>
-          <nav>
-            <ol>
-              <li>Introduction</li>
-              <li>Prep</li>
-              <li>Cooking</li>
-              <li>Reviews</li>
-            </ol>
-          </nav>
+          <StickySidebar>
+            <h2>Chicken Cacciatore</h2>
+            <nav>
+              <ol>
+                <li>Introduction</li>
+                <li>Prep</li>
+                <li>Cooking</li>
+                <li>Reviews</li>
+                <li>Introduction</li>
+                <li>Prep</li>
+                <li>Cooking</li>
+                <li>Reviews</li>
+                <li>Introduction</li>
+                <li>Prep</li>
+                <li>Cooking</li>
+                <li>Reviews</li>
+                <li>Introduction</li>
+                <li>Prep</li>
+                <li>Cooking</li>
+                <li>Reviews</li>
+                <li>Introduction</li>
+                <li>Prep</li>
+                <li>Cooking</li>
+                <li>Reviews</li>
+                <li>Introduction</li>
+                <li>Prep</li>
+                <li>Cooking</li>
+                <li>Reviews</li>
+                <li>Introduction</li>
+                <li>Prep</li>
+                <li>Cooking</li>
+                <li>Reviews</li>
+              </ol>
+            </nav>
+          </StickySidebar>
         </Sidebar>
 
         <Main>Main Content</Main>
