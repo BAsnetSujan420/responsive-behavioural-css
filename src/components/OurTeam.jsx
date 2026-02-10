@@ -34,7 +34,8 @@ const Cards = styled.section`
   gap: 22px;
 
   & > * {
-    min-width: 320px;
+    flex: 1 1 320px;
+    max-width: 640px;
   }
 `;
 

@@ -10,8 +10,8 @@ const Inner = styled.div`
   border-radius: var(--radius);
   padding: 22px 22px 18px;
   box-shadow: 0 0 0 1px var(--border) inset;
-  overflow: hidden;
   border: 2px solid rgba(255, 255, 255, 0.35);
+  container-type: inline-size;
 `;
 
 const Header = styled.header`
@@ -20,6 +20,15 @@ const Header = styled.header`
   justify-items: center;
   text-align: center;
   padding-bottom: 12px;
+
+  @container (min-width: 26rem) {
+    grid-template-columns: auto 1fr;
+    align-items: initial;
+    justify-items: revert;
+    text-align: left;
+    gap: 1.5rem;
+    margin-bottom: -2rem;
+  }
 `;
 
 const Avatar = styled.div`
@@ -36,6 +45,18 @@ const Avatar = styled.div`
     letter-spacing: 0.02em;
     opacity: 0.7;
   }
+
+  @container (min-width: 26rem) {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-40px);
+
+    span {
+      letter-spacing: 0.02em;
+      opacity: 0.7;
+      font-size: 2.2rem;
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -50,6 +71,10 @@ const Name = styled.h3`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @container (min-width: 26rem) {
+    font-size: 1.8rem;
+  }
 `;
 
 const Handle = styled.p`
@@ -57,6 +82,9 @@ const Handle = styled.p`
   color: var(--muted);
   font-style: italic;
   font-size: 18px;
+  @container (min-width: 26rem) {
+    font-size: 1.4rem;
+  }
 `;
 
 const Meta = styled.div`
@@ -65,6 +93,12 @@ const Meta = styled.div`
   padding: 12px 2px 18px;
 
   grid-template-columns: 1fr;
+
+  @container (min-width: 26rem) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 12px;
+  }
 `;
 
 const MetaItem = styled.div`
@@ -77,6 +111,10 @@ const MetaItem = styled.div`
 
 const MetaItemWideOnly = styled(MetaItem)`
   display: none;
+
+  @container (min-width: 26rem) {
+    display: grid;
+  }
 `;
 
 const Icon = styled.span`
@@ -105,6 +143,10 @@ const Actions = styled.div`
   display: grid;
   gap: 12px;
   grid-template-columns: 1fr;
+
+  @container (min-width: 26rem) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const BtnBase = styled.button`
