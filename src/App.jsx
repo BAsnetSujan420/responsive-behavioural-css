@@ -8,6 +8,7 @@ import FullBleedLayout from './components/FullBleedLayout';
 import GridAlignment from './components/GridAlignment';
 import GridSnippet from './components/GridSnippet';
 import HeroContent from './components/HeroContent';
+import HorizontalScrollbarGrid from './components/HorizontalScrollbarGrid';
 import MaxWidthColumn from './components/MaxWidthColumn';
 import OurShop from './components/OurShop';
 import OurTeam from './components/OurTeam';
@@ -34,7 +35,8 @@ function App() {
       {/* <GridSnippet /> */}
       {/* <OurTeam /> */}
       {/* <StickyGrid /> */}
-      <FullBleedLayout />
+      {/* <FullBleedLayout /> */}
+      <HorizontalScrollbarGrid />
     </>
   );
 }
