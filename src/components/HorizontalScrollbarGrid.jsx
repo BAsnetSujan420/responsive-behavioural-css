@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 175px 1fr;
+   grid-template-columns:
+      175px minmax(0, 1fr);
+  }
   gap: 16px;
 `;
 
