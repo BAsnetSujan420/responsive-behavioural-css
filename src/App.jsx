@@ -4,6 +4,7 @@ import BeachDay from './components/BeachDay';
 import DarkMode, { GlobalStyles } from './components/DarkMode';
 import FluidDesign from './components/FluidDesign';
 import FluidGrid from './components/FluidGrid';
+import FullBleedLayout from './components/FullBleedLayout';
 import GridAlignment from './components/GridAlignment';
 import GridSnippet from './components/GridSnippet';
 import HeroContent from './components/HeroContent';
@@ -32,7 +33,8 @@ function App() {
       {/* <FluidGrid /> */}
       {/* <GridSnippet /> */}
       {/* <OurTeam /> */}
-      <StickyGrid />
+      {/* <StickyGrid /> */}
+      <FullBleedLayout />
     </>
   );
 }
